@@ -174,12 +174,16 @@ a {
   color: rgb(196, 226, 228);
   font-size: 2rem;
 
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 
   strong {
     color: rgb(255, 255, 255);
     font-weight: 700;
   }
+   span {
+     display: inline-block;
+     margin-top: .4rem;
+   }
 }
 
 
@@ -189,12 +193,13 @@ a {
   .items-center;
 }
 .topInfo__block {
+  .column-center;
   padding: .8rem;
-  //margin-bottom: 1.5rem;
   border-radius: 5px;
 
   width: 40%;
   min-width: 170px;
+  min-height: 100px;
   margin: 0 auto 1rem;
 
   background: white;
@@ -387,6 +392,10 @@ a {
   margin-right: auto;
 }
 
+.additional-info__text {
+  text-align: justify;
+  color: @color-body + 20;
+}
 
 .footer {
   width: 95%;
