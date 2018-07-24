@@ -41,6 +41,7 @@ html {
   font-size: 13px;
   .to( @md, font-size, 12px );
   .to( @xsm, font-size, 11px );
+  .to( @xs, font-size, 10.5px );
   font-weight: 500;
 }
 body {
@@ -112,6 +113,7 @@ a {
 .header__logo {
   .full-height;
   width: 28%;
+  min-width: 58px;
   background: url('../img/logo-main.png') center no-repeat;
   background-size: contain;
 }
@@ -121,14 +123,14 @@ a {
   font-size: 1.1rem;
   font-weight: 300;
   .flex-center;
-  margin: 0 1rem;
+  margin-left: 1rem;
 }
 
 .header__wrapper {
   width: 35px;
   .full-height;
 
-  margin-left: .5rem;
+  margin-left: .6rem;
 
   .column;
   .items-end;
@@ -401,5 +403,5 @@ a {
   display: block;
   padding-top: 175px;
 
-  .to( @xs, padding-top, 220px );
+  .to( @xs, padding-top, 210px );
 }
