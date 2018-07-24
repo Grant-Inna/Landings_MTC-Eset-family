@@ -5,18 +5,16 @@ html
     body
         #container
             .header__container
-                .header__general
+                .header__general.offset
                     .header__logo
                     .header__caption Комплексная защита для ПК/ноутбука и планшета/смарфона, а также домашней сети
                     .header__wrapper
                         a( href="http://esetnod32.ru" ).header__cross
                         .header__age
                 .header__info
-                    .header__firstLine
-                        .header__stripe
-                        .header__text ESET NOD32
+                    .header__text ESET NOD32
                         strong &nbsp;SMART SECURITY FAMILY&nbsp;
-            .topInfo__container
+            .topInfo__container.offset
                 .topInfo__block
                     .topInfo__icon.topIcon-1
                     .topInfo__text Почувствуй себя в безопасности в интернете
@@ -36,21 +34,21 @@ html
                     .topInfo__icon.topIcon-6
                     .topInfo__text Все устройства под защитой
             .bottomInfo__container
-                .bottomInfo__inner
+                .bottomInfo__inner.offset
                     .bottomInfo__title Вы можете установить лицензию на &nbsp;
                         strong 3 устройства&nbsp;
                         | в любом сочетании
                     .bottomInfo__text-wrapper
-                        .bottomInfo__text-icon
+                        .bottomIcon-1.bottomInfo__text-icon
                         .bottomInfo__text для компьютеров и ноутбуков на операционной системе: Microsoft Windows, macOS, Linux Desktop
                     .bottomInfo__text-wrapper
-                        .bottomInfo__text-icon
+                        .bottomIcon-2.bottomInfo__text-icon
                         .bottomInfo__text для смартфонов и планшетов на операционной системе Android
             .movingInfo__container
-                .movingInfo__inner
-                    .movingInfo__title ПОДКЛЮЧИТЕ&nbsp;
-                        strong КОМПЛЕКСНУЮ ЗАЩИТУ
-                        | &nbsp;ДЛЯ ВАШИХ УСТРОЙСТВ
+                .movingInfo__inner.offset
+                    .movingInfo__title Подключите&nbsp;
+                        strong комплексную защиту
+                        | &nbsp;для ваших устройств
                     .movingInfo__button( onclick="document.getElementById('subscr-form').submit();return false;" )
                         div Подключить
                     .movingInfo__price Стоимость подписки — 6,77 руб/день
@@ -59,13 +57,14 @@ html
                         | Услуга оказывается МТС, совместно с ООО «Автоматизация счетов»
             .secondLogo__container
                 .secondLogo__image
-            .additional-info__wrapper
+            .additional-info__wrapper.offset
                 .additional-info__text Для корректной работа сервиса требуется установка мобильного приложения ESET Mobile Security
                 .additional-info__text Расширенная версия ESET Mobile Security позволит использовать дополнительные функции антифишинга, фильтра SMS и звонков, выполнять аудит приложений
-            .empty-space
+
             footer.footer#footer
                 .hide__content
                         <!--END HEADER-->
                     include footer
                         <!--START FOOTER-->
                 p.footer__text-block#trig-footer
+            .empty-space
